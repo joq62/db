@@ -30,9 +30,7 @@ init([]) ->
                  intensity => 0,
                  period => 1},
     ChildSpecs = [#{id=>db,
-		    start=>{db,start,[]}},
-		 #{id=>db_oam,
-		  start=>{db_oam,start,[]}}],
+		    start=>{db,start,[]}}],
     {ok, {SupFlags, ChildSpecs}}.
 
 %% internal functions
